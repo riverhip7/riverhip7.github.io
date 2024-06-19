@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -45,9 +45,11 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            color: #00ff88;
+            color: #007bff;
             text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
             margin: 0;
+            font-size: 3rem;
+            white-space: nowrap;
         }
 
         h2 {
@@ -90,6 +92,17 @@
         .footer {
             text-align: center;
             margin-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 2rem; /* スマホでのフォントサイズ調整 */
+                white-space: nowrap; /* テキストの改行を防ぐ */
+            }
+
+            .header {
+                height: 150px; /* スマホでのヘッダー高さ調整 */
+            }
         }
     </style>
 </head>
@@ -150,6 +163,7 @@
             <p>Designed and developed by りばーひっぷ &copy; 2023～</p>
         </footer>
     </div>
+
 </body>
 
 </html>
