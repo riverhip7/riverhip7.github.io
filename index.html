@@ -45,11 +45,11 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            color: #007bff;
+            color: #fff;
             text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
             margin: 0;
             font-size: 3rem;
-            white-space: nowrap;
+            white-space: nowrap; /* テキストの改行を防ぐ */
         }
 
         h2 {
@@ -97,11 +97,14 @@
         @media (max-width: 600px) {
             .header h1 {
                 font-size: 2rem; /* スマホでのフォントサイズ調整 */
-                white-space: nowrap; /* テキストの改行を防ぐ */
             }
 
             .header {
                 height: 150px; /* スマホでのヘッダー高さ調整 */
+            }
+
+            .header h1 {
+                top: 40%; /* テキストの位置微調整 */
             }
         }
     </style>
@@ -125,6 +128,7 @@
                 <li><strong>誕生日</strong> 7月19日</li>
                 <li><strong>身長 / 体重</strong> 177cm / 60kg</li>
                 <li><strong>性格 </strong> だいぶ抜けてる</li>
+                <li><strong>好きな場所 </strong> 東京ディズニーリゾート（ランドもシーも大好きです！）</li>
             </ul>
         </section>
         <section>
